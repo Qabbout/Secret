@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustViewForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(adjustViewForKeyboard), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(saveSecretMEssage), name: UIApplication.willResignActiveNotification, object: nil)
         
     }
     
@@ -42,8 +43,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func authenticateTapped(_ sender: Any) {
+        unlockSecretMessage()
     }
     
+    func unlockSecretMessage(){
+        secret.isHidden = false
+        title = "Secret Stuff!"
+        
+        secret.text = KeychainWrapper.standard.string(forKey: "SecretMessage") ?? ""
+    }
+    
+    @objc func saveSecretMEssage(){
+        guard secret.isHidden == false else {return}
+        
+        KeychainWrapper.standard.set(secret.text, forKey: "SecretMessage")
+        secret.resignFirstResponder()
+        secret.isHidden = true
+        title = "Nothing to see here"
+    }
     
 
 }
