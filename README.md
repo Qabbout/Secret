@@ -1,4 +1,4 @@
-# Notifier
+# Secret
 
 iOS app to write secret stuff use Swift, UIKit and LocalAuthentication(FaceID, TouchID..) and iOS Keychain Wrapper.
 
