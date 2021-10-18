@@ -13,6 +13,8 @@
 		F75F3700271D658300F437B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75F36FE271D658300F437B0 /* Main.storyboard */; };
 		F75F3702271D658600F437B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75F3701271D658600F437B0 /* Assets.xcassets */; };
 		F75F3705271D658600F437B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75F3703271D658600F437B0 /* LaunchScreen.storyboard */; };
+		F75F370D271D70B600F437B0 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75F370C271D70B600F437B0 /* KeychainItemAccessibility.swift */; };
+		F75F370F271D710100F437B0 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75F370E271D710100F437B0 /* KeychainWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F75F3701271D658600F437B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F75F3704271D658600F437B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F75F3706271D658600F437B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75F370C271D70B600F437B0 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		F75F370E271D710100F437B0 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				F75F36F8271D658300F437B0 /* AppDelegate.swift */,
 				F75F36FA271D658300F437B0 /* SceneDelegate.swift */,
 				F75F36FC271D658300F437B0 /* ViewController.swift */,
+				F75F370C271D70B600F437B0 /* KeychainItemAccessibility.swift */,
+				F75F370E271D710100F437B0 /* KeychainWrapper.swift */,
 				F75F36FE271D658300F437B0 /* Main.storyboard */,
 				F75F3701271D658600F437B0 /* Assets.xcassets */,
 				F75F3703271D658600F437B0 /* LaunchScreen.storyboard */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75F36FD271D658300F437B0 /* ViewController.swift in Sources */,
+				F75F370D271D70B600F437B0 /* KeychainItemAccessibility.swift in Sources */,
 				F75F36F9271D658300F437B0 /* AppDelegate.swift in Sources */,
 				F75F36FB271D658300F437B0 /* SceneDelegate.swift in Sources */,
+				F75F370F271D710100F437B0 /* KeychainWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
